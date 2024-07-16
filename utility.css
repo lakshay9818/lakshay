@@ -1,0 +1,117 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.bg-black {
+    background: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background: #121212;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333;
+    /* dark background color */
+    border-radius: 10px;
+    /* visibility: hidden; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #777;
+    /* lighter color for the thumb */
+}
+
+/* Base styles for the range input */
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 8px;
+    /* Height of the slider */
+    background: linear-gradient(to right, #555 0%, #555 50%, #888 50%, #888 100%);
+    /* Gradient background */
+    outline: none;
+    /* Remove default focus styling */
+    opacity: 0.7;
+    /* Opacity of the track */
+    transition: opacity 0.15s ease-in-out;
+    /* Smooth transition for opacity change */
+}
+
+/* Styling the thumb (handle) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    /* Width of the thumb */
+    height: 20px;
+    /* Height of the thumb */
+    background: #fff;
+    /* White thumb */
+    border-radius: 50%;
+    /* Rounded thumb */
+    cursor: pointer;
+    /* Cursor on hover */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+}
+
+/* Styling for when the range input is active */
+input[type=range]:active::-webkit-slider-thumb {
+    background: #ccc;
+    /* Lighter thumb color when active */
+}
+
+/* Styling for when the range input is focused */
+input[type=range]:focus {
+    opacity: 1;
+    /* Full opacity when focused */
+}
+
+/* Styling for when the range input is disabled */
+input[type=range]:disabled {
+    opacity: 0.5;
+    /* Reduced opacity for disabled state */
+    /* cursor: not-allowed; */
+    /* Disabled cursor */
+}
